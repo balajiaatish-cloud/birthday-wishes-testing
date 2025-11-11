@@ -1,234 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Happy Birthday Shivani!</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Shivani!</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #ffe6f0, #fff5f5);
-  color: #333;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  text-align: center;
-}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #fff5f5);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      text-align: center;
+    }
 
-/* container centered for laptop view */
-.container {
-  width: 90%;
-  max-width: 750px;   /* better laptop width */
-  margin: 60px auto;
-  padding: 35px;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 25px;
-  box-shadow: 0 10px 40px rgba(255, 105, 180, 0.3);
-  backdrop-filter: blur(8px);
-  position: relative;
-  z-index: 10;
-  animation: fadeIn 2s ease-in-out;
-}
+    .container {
+      max-width: 650px;
+      margin: 70px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 25px;
+      box-shadow: 0 10px 40px rgba(255, 105, 180, 0.3);
+      backdrop-filter: blur(8px);
+      position: relative;
+      z-index: 10;
+      animation: fadeIn 2s ease-in-out;
+    }
 
-h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 2.6em;
-  color: #ff69b4;
-  margin-bottom: 20px;
-  text-shadow: 0 0 15px rgba(255, 105, 180, 0.4);
-  animation: glow 2s ease-in-out infinite alternate;
-}
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.8em;
+      color: #ff69b4;
+      margin-bottom: 20px;
+      text-shadow: 0 0 15px rgba(255, 105, 180, 0.4);
+      animation: glow 2s ease-in-out infinite alternate;
+    }
 
-@keyframes glow {
-  from { text-shadow: 0 0 10px #ffb6c1, 0 0 20px #ff69b4; }
-  to { text-shadow: 0 0 25px #ff69b4, 0 0 40px #ff1493; }
-}
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ffb6c1, 0 0 20px #ff69b4; }
+      to { text-shadow: 0 0 25px #ff69b4, 0 0 40px #ff1493; }
+    }
 
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
 
-.envelope {
-  font-size: 4em;
-  cursor: pointer;
-  margin: 25px 0;
-  transition: transform 0.3s ease;
-  animation: pulse 2s infinite;
-}
-.envelope:hover { transform: scale(1.2); }
+    .envelope {
+      font-size: 4em;
+      cursor: pointer;
+      margin: 30px 0;
+      transition: transform 0.3s ease;
+      animation: pulse 2s infinite;
+    }
 
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
+    .envelope:hover {
+      transform: scale(1.2);
+    }
 
-.letter {
-  display: none;
-  background: #fff;
-  border: 2px solid #ff69b4;
-  border-radius: 15px;
-  padding: 25px;
-  margin-top: 20px;
-  font-size: 1.05em;
-  line-height: 1.7;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-.letter.show {
-  display: block;
-  opacity: 1;
-  transform: translateY(0);
-  animation: fadeIn 2s ease-in-out;
-}
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
 
-/* floating hearts */
-.hearts {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 1;
-}
-.heart {
-  position: absolute;
-  color: rgba(255,105,180,0.6);
-  font-size: 20px;
-  animation: floatUp 6s linear infinite;
-}
-@keyframes floatUp {
-  0% { transform: translateY(100vh) scale(0.8); opacity: 1; }
-  100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
-}
+    .letter {
+      display: none;
+      background: #fff;
+      border: 2px solid #ff69b4;
+      border-radius: 15px;
+      padding: 25px;
+      margin-top: 20px;
+      font-size: 1.1em;
+      line-height: 1.7;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
 
-/* background overlay */
-.overlay {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: radial-gradient(circle at bottom, #ffe6f0 0%, #ffffff 80%);
-  z-index: 0;
-}
+    .letter.show {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+      animation: fadeIn 2s ease-in-out;
+    }
 
-/* dp image */
+    /* Floating hearts */
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .heart {
+      position: absolute;
+      color: rgba(255, 105, 180, 0.6);
+      font-size: 20px;
+      animation: floatUp 6s linear infinite;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(100vh) scale(0.8); opacity: 1; }
+      100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+    }
+
+    /* Soft background overlay */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at bottom, #ffe6f0 0%, #ffffff 80%);
+      z-index: 0;
+    }
+/* DP Circle – larger & face clearly visible */
 .dp-photo {
-  width: 230px;
-  height: 230px;
+  width: 220px;               /* increased from 180 */
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 25%;
+  object-position: center 25%;  /* lifts face a bit up */
   margin-top: 25px;
   border: 5px solid #ff69b4;
   box-shadow: 0 0 30px rgba(255,105,180,0.5);
   filter: drop-shadow(0 0 25px rgba(255,105,180,0.45));
-  display: none;
+  display: none;               /* shown after reveal */
 }
 
-/* slideshow tuned for laptop */
+/* Slideshow container – horizontal scrolling setup */
 .slideshow {
   width: 100%;
-  max-width: 700px;
-  margin: 30px auto 0 auto;
+  max-width: 650px;
+  margin: 25px auto 0 auto;
   position: relative;
   display: none;
   overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0 0 25px rgba(255,105,180,0.25);
-  background: rgba(255,255,255,0.3);
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.25);
 }
 
-.slide {
+/* Wrapper for sliding track */
+.slideshow-track {
+  display: flex;
   width: 100%;
-  height: auto;
-  max-height: 480px;
-  object-fit: contain;
-  object-position: center;
-  display: block;
-  margin: 0 auto;
-  opacity: 0;
-  transition: opacity 1.8s ease-in-out;
+  transition: transform 1s ease-in-out;  /* smooth horizontal move */
 }
-.slide.active { opacity: 1; }
 
-/* mild scaling for phone view (not responsive, just shrink) */
-@media (max-width: 768px) {
-  .container {
-    transform: scale(0.9);
-    margin: 20px auto;
-  }
-  h1 { font-size: 2em; }
-  .envelope { font-size: 3em; }
-  .dp-photo { width: 180px; height: 180px; }
+/* Each slide */
+.slide {
+  flex: 0 0 100%;      /* each image takes full width */
+  max-height: 420px;
+  object-fit: contain; /* full image visible */
+  object-position: center;
 }
-</style>
+
+
+.slide.active {
+  opacity: 1;
+}
+
+/* DP soft glow highlight */
+.dp-photo {
+  filter: drop-shadow(0 0 25px rgba(255,105,180,0.45));
+}
+
+  </style>
 </head>
 <body>
-<div class="overlay"></div>
-<div class="hearts" id="hearts"></div>
+  <div class="overlay"></div>
+  <div class="hearts" id="hearts"></div>
 
-<div class="container">
-  <h1>🎂 Happy Birthday Shivani! 🎂</h1>
-  <img class="dp-photo" id="dpPhoto" src="pic1.jpg">
+  <div class="container">
+    <h1>🎂 Happy Birthday Shivani! 🎂</h1>
+    <!-- DP Photo Placeholder -->
+<img class="dp-photo" id="dpPhoto" src="pic1.jpg">
 
-  <p style="font-size:1.1em;">Tap the envelope to open your special birthday letter 💌</p>
-  <div class="envelope" onclick="revealLetter()">💌</div>
-
-  <div class="letter" id="letter">
-    <p>Happiest birthday to the sweetest person I know 🤭<br>
-    manam frnds ayyi 5 months ee aithundhi telusaa?...</p>
-    <p>Thanks for being everything 💖</p>
-    <p>Happy Birthday, Bgrm! ... — Aatish 💫</p>
-
-    <div class="slideshow" id="slideShow">
-      <img class="slide" src="pic1.jpg">
-      <img class="slide" src="pic2.jpg">
-      <img class="slide" src="pic3.jpg">
-      <img class="slide" src="pic4.jpg">
-      <img class="slide" src="pic5.jpg">
-    </div>
+    <p style="font-size: 1.1em;">Tap the envelope to open your special birthday letter 💌</p>
+    <div class="envelope" onclick="revealLetter()">💌</div>
+    <div class="letter" id="letter">
+      <p>Happiest birthday to the sweetest person I know 🤭<br>
+      manam frnds ayyi 6 months, 15 days aithundhi telusaa? naaku nijam gaa 6 years laaga anipisthundhi ra — manam baaga close ayyinandhuku ala anipisthundhi emo.</p>
+      <p>nenu neetho night oka rendu sarilu maataladanu anthee kaani first time full free gaa maataladindhi ante "26 May, 12:26 pm" ki neeku naadhagira nunchi first msg "Hii andi" appati nunchi start ayyindhi mana frndship...</p>
+      <p>cheppali antee ippativaraku chala memories chesukunnamu iddharu kalipi, and nenu anukovalee manam inthaa tvaraga close avuthamu ani</p>
+      <p>nvv naa life lo first female frnd vi, inthaa manchigaa ardham chesukone antha, baaga close ayyina frnd, 10 years school lo undi akkada female frnds lo lenidhi nee lo chusa ra..naakosam anthaa care, love, affection, chupinchedhanivi nvv okkadivee ra..thankyou so much ra ee lanti frndship icchinandhuku.</p>
+      <p></p>
+      <p>ee letter lo birthday wishes kantee naa feelings and emotions ee ekkuva gaa unnai emo😂😅</p>
+      <p>inni rojulu nannu ela bharinchaavo ardham aithale ra😂; you deserve an award, not gonna lie 😂 But I’m glad you did. From our random chats to our video calls, every moment has been pure chaos, and I love that.</p>
+      <p>On your birthday, I want to say... nvv nee past lo jariginaa bad memories anni marchipoyii ee year kotthaga, kothha memories tho manchigaa gadapuu ra.<br>
+      nvv nijam gaa naa life lo dhorikinaa best and genuine person vi ra — supporting, motivating, helping, funny, crazy, but still my favorite human. I hope this birthday brings you all the happiness, and unlimited memes you deserve.</p>
+      <p>nenu ninnu appadapadu sarigaa ardham chesukonu, baaga feel avvuthaa, overthink chesthaa, idhi anthaa manchi habit kaadhu, tvaralonee maarchukuntaa...</p>
+      <p>Inka nenu cheppalante, you’re the best thing that’s happened to me this year, and I’m so grateful for you.</p>
+      <p>So, idhigooo, Bgrm — may your day be filled with laughter, love, and all the cake you can eat! 🎉🎂</p>
+      <p>manam life long ilanee undali ani korukuntunnanu, and nenu eppudu nee side lo untaanu,.</p>
+      <p>Thanks for being everything 💖</p>
+      <p>I hope i made your birthday special, next year nenu inka baaga plan chesthanu.</p>
+      <p>Happy Birthday, Bgrm! may this year bring you lot of happiness and success, all the best for your exams...inkaa nee day ni enjoy cheyyu, and naaku party ivvadam marchipovaku 😜</p>
+      <p style="font-weight: 600;">With fake seriousness and real love,<br>— Aatish 💫</p>
+      <!-- Slideshow Placeholder -->
+<div class="slideshow" id="slideShow">
+  <div class="slideshow-track" id="slideTrack">
+    <img class="slide" src="pic1.jpg">
+    <img class="slide" src="pic2.jpg">
+    <img class="slide" src="pic3.jpg">
+    <img class="slide" src="pic4.jpg">
+    <img class="slide" src="pic5.jpg">
   </div>
 </div>
 
-<audio id="bgMusic" loop>
+  <audio id="bgMusic" loop>
   <source src="birthday-music.mp3" type="audio/mp3">
 </audio>
 
+
 <script>
+    // ensure all media can play after first touch
 document.addEventListener("touchstart", () => {
   const music = document.getElementById("bgMusic");
-  if (music.paused) music.play().catch(()=>{});
-},{ once:true });
+  if (music.paused) {
+    music.play().catch(() => {}); // safely start on first tap
+  }
+}, { once: true });
 
-function revealLetter(){
+function revealLetter() {
   const letter = document.getElementById('letter');
   const dp = document.getElementById('dpPhoto');
   const slideshow = document.getElementById('slideShow');
   const music = document.getElementById('bgMusic');
 
+  // reveal content smoothly
   letter.classList.add('show');
   dp.style.display = 'block';
   slideshow.style.display = 'block';
 
-  if(music.paused){
+  // play music (mobile-friendly)
+  if (music.paused) {
     music.volume = 0.3;
-    music.play().catch(()=>{});
+    music.play().catch(() => {});
   }
 
-  let currentSlide=0;
-  const slides=document.querySelectorAll('.slide');
-  slides[currentSlide].classList.add('active');
+  // sliding slideshow version
+let currentSlide = 0;
+const track = document.getElementById('slideTrack');
+const slides = document.querySelectorAll('.slide');
 
-  setInterval(()=>{
-    slides[currentSlide].classList.remove('active');
-    currentSlide=(currentSlide+1)%slides.length;
-    slides[currentSlide].classList.add('active');
-  },4800);
+setInterval(() => {
+  currentSlide = (currentSlide + 1) % slides.length;
+  track.style.transform = `translateX(-${currentSlide * 100}%)`;
+}, 4500);  // 4.5 sec per slide
 }
 </script>
 </body>
